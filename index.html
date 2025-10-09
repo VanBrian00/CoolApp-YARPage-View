@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Analysis Results</title>
+    <link rel='stylesheet' href="style.css?v=1.3">
+</head>
+<body>
+    <div class="container">
+        <button class="back-btn" onclick="window.location.href='index.html'">
+                <img src="Assets/icon-back.png" alt="Tombol Balik">
+        </button>
+
+        <header class="page-header">
+            <br>
+            <h1>Your Analysis Results</h1>
+            <p>Get a quick glimpse into your mental and emotional state just by your handwriting</p>
+        </header>
+
+        <!--Card Pertama-->
+        <section class="card">
+            <div class="card-header">
+                <img src="Assets/icon-focus.png" alt="Icon Focus">
+                <h2>Focus Level</h2>
+            </div>
+            <h3 class="highlight">Moderate High</h3>
+            <p class="content">Consistent letter size, even spacing, clear well-formed letters, straight baseline, moderate pressure</p>
+            <p class="note">The handwriting indicates a good level of focus and concentration</p>
+        </section>
+        
+        <!--Card Ke-2 -->
+        <section class="card">
+            <div class="card-header">
+                <img src="Assets/icon-relaxation.png" alt="Icon relax">
+                <h2>Stress / Relaxation Level</h2>
+            </div>
+
+            <div class="image-row">
+                <img src="Assets/emoticon-overjoyed.png" alt="emoticon overjoyed" class="faded">
+                <img src="Assets/emoticon-happy.png" style="width:20%; height:auto;" alt="emoticon happy">
+                <img src="Assets/emoticon-neutral.png" alt="emoticon neutral" class="faded">
+                <img src="Assets/emoticon-sad.png" alt="emoticon sad" class="faded">
+                <img src="Assets/emoticon-depressed.png" alt="emoticon depressed" class="faded">
+            </div>
+
+            <div class="emotion-bar">
+                <div class="bar-fill" style="width: 26%;">
+                    <span class="bar-circle">
+                        <span class="bar-circle2"></span>
+                    </span>
+                </div>
+            </div>
+
+            <p class="content">Moderate pressure, consistent spacing, smooth strokes</p>
+            <p class="note">The handwriting suggests a relatively calm and relaxed state</p>
+        </section>
+
+        <!--Card Ke-3 -->
+        <section class="card">
+            <div class="card-header">
+                <img src="Assets/icon-mindbody.png" alt="Icon Mind Body">
+                <h2>Mind-Body-Spirit Composition</h2>
+            </div>
+
+            <div class="composition">
+                <div class="circle-container">
+                    <svg class="ring" width="140" height="140" viewBox="0 0 140 140">
+                        <circle class="bg" cx="70" cy="70" r="60" />
+                        <circle class="progress body" cx="70" cy="70" r="60" stroke-dasharray="113 377"/>                       
+                    </svg>
+
+                    <svg class="ring" width="110" height="110" viewBox="0 0 110 110">
+                        <circle class="bg" cx="55" cy="55" r="45" />
+                        <circle class="progress mind" cx="55" cy="55" r="45" stroke-dasharray="113 282"/>                       
+                    </svg>
+                    
+                    <svg class="ring" width="80" height="80" viewBox="0 0 80 80">
+                        <circle class="bg" cx="40" cy="40" r="30" />
+                        <circle class="progress spirit" cx="40" cy="40" r="30" stroke-dasharray="57 188"/>                       
+                    </svg>
+                </div>
+
+                <div class="composition-list">
+                    <div class="item">
+                        <span class="circle spirit"></span>
+                        <span class="label">
+                            <strong>Spirit</strong>
+                            <div>30%</div>
+                        </span>
+                    </div>
+                    <div class="item">
+                        <span class="circle mind"></span>
+                        <span class="label">
+                            <strong>Mind</strong>
+                            <div>40%</div>
+                        </span>
+                    </div>
+                    <div class="item">
+                        <span class="circle body"></span>
+                        <span class="label">
+                            <strong>Body</strong>
+                            <div>30%</div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="content">A balanced distribution with a slight emphasis on mental engagement</p>
+        </section>
+
+        <!--Card Ke-4 -->
+        <section class="card">
+            <div class="card-header">
+                <img src="Assets/icon-emotion.png" alt="Icon Emotion">
+                <h2>Emotion Meter</h2>
+            </div>
+
+            <div class="card4-image">
+                <img src="Assets/image-overjoyed.png" alt="Emotional Illustration">
+            </div>
+
+            <h3 class="highlight2">Very emotional and sensitive, expresses emotions freely</h3>
+            <p class="content">Curved letters, moderate pressure, smooth strokes</p>
+            <p class="note">The handwriting reflects emotional expressiveness and sensitivity</p>
+        </section>
+
+        <!--Card Ke-5 -->
+        <section class="card">
+            <div class="card-header">
+                <img src="Assets/icon-stateofmind.png" alt="Icon State Of Mind">
+                <h2>State of Mind-Body</h2>
+            </div>
+
+            <div class="card5-image1">
+                <img src="Assets/emoticon-happy.png" alt="Happy">
+            </div>
+    
+            <h3 class="highlight3">Relaxed</h3>
+
+            <div class="card5-image2">
+                <img src="Assets/gauge-emotion.png" alt="Indicator Bar" class="gauge-emotion">
+                <img src="Assets/gauge-arrow.png" alt="Tanda Panah" class="gauge-arrow">
+            </div>
+        </section>
+
+        <!--Card ke-6 -->
+        <section class="card2">
+            <div class="card2-header">
+                <img src="Assets/icon-overall.png" alt="Icon mata/ Overall">
+                <h2>Overall</h2>
+            </div>
+            <p class="content">Moderate pressure, smooth stroke quality, consistent slant, medium letter size, even word spacing, stable baseline, well-formed loops</p>
+            <p class="note">Overall, the handwriting suggests a balanced, calm, and emotionally stable personality</p>
+        </section>
+    </div>
+    <!--Untuk Bagian Lingkaran Cincin Di Card Ke-3-->
+    <svg width="0" height="0">
+        <defs>
+            <linearGradient id="gradBody" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#0f329b"/>
+            <stop offset="100%" stop-color="#051d55"/>
+            </linearGradient>
+
+            <linearGradient id="gradMind" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#05c1fb"/>
+            <stop offset="100%" stop-color="#0082c8"/>
+            </linearGradient>
+
+            <linearGradient id="gradSpirit" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#fad41c"/>
+            <stop offset="100%" stop-color="#fca311"/>
+            </linearGradient>
+        </defs>
+    </svg>
+</body> 
+</html>

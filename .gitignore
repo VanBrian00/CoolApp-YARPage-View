@@ -1,0 +1,5 @@
+# abaikan semua file di asset
+Assets/*
+
+# kecuali foldernya
+!Assets/.gitkeep

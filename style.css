@@ -1,0 +1,455 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1D4ED8;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+p {
+    line-height: 1.4;
+}
+
+header {
+    text-align: center;
+}
+
+/* Di bawah ini untuk style tombol back*/
+.back-btn {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: none;
+    border : none;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.back-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Di atas ini untuk style tombol back*/
+
+/* Di bawah ini untuk style kartu*/
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Di atas ini untuk style kartu*/
+
+/* Di bawah ini untuk style header kartu*/
+.card-header {
+    display: flex;
+    align-items: center;
+}
+
+.card-header img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.card-header h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #080b35;
+}
+/* Di atas ini untuk style header kartu*/
+
+.highlight {
+    font-size: 1.4rem;
+    color: #1243c7;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    margin: 6px 0;
+    color: #111827;
+}
+
+.card .content {
+    margin-bottom: 12px;
+}
+
+.card .note{
+    color: #97b7da;
+    font-size: 0.9rem;
+}
+
+
+/* Di bawah ini untuk style Bagian Kartu Ke-2*/
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.image-row img {
+    width: 13%;
+    height: auto;
+}
+
+.faded {
+    opacity: 0.3;
+}
+
+.emotion-bar {
+    width: 100%;
+    height: 12px;
+    background: #edf6ff;
+    border-radius: 6px;
+    margin: 16px 0;
+}
+
+.bar-fill {
+    position: relative;
+    height: 100%;
+    background: linear-gradient(90deg, #01cffe, #0fa1f4);
+    border-radius: 6px 0 0 6px;
+}
+
+.bar-circle {
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(90deg,#0fa1f4 ,#1490f1);
+    border-radius: 50%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar-circle2 {
+    width: 50%;
+    height: 50%;
+    background: white;
+    border-radius: 50%;
+}
+/* Di atas ini untuk style Bagian Kartu Ke-2*/
+
+/* Di bawah ini untuk style Bagian Kartu Ke-3*/
+.composition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 16px 0;
+}
+
+.circle-container {
+    position: relative;
+    width: 100%;
+    max-width: 160px;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+}
+
+.circle-container svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    height: 100%;
+}
+
+.circle-container svg:nth-child(2) {
+    width: 75%;
+    height: 75%;
+}
+
+.circle-container svg:nth-child(3) {
+    width: 50%;
+    height: 50%;
+}
+
+.bg {
+    stroke: #e6f0ff;
+}
+
+.ring{
+    position: absolute;
+    transform: rotate(-90deg);
+}
+circle {
+    fill : none;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.circle {
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress.body {
+    stroke: url(#gradBody);
+}
+
+.progress.mind {
+    stroke: url(#gradMind);
+}
+
+.progress.spirit {
+    stroke: url(#gradSpirit);
+}
+
+.composition-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+}
+
+.item .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.circle.mind {
+    background: #05c1fb;
+}
+.circle.body {
+    background: #0f329b;
+}
+.circle.spirit {
+    background: #fad41c;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.label strong {
+    color: #e1eaf4;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.label div {
+    color: #353739;
+    font-weight: bold;
+}
+/* Di atas ini untuk style Bagian Kartu Ke-3*/
+
+/* Di bawah ini untuk style Bagian Kartu Ke-4*/
+.card4-image {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.card4-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+.highlight2 {
+    font-size: 1.1rem;
+    color: #1243c7;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+/* Di atas ini untuk style Bagian Kartu Ke-4*/
+
+/* Di bawah ini untuk style Bagian Kartu Ke-5*/
+.card5-image1 {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.card5-image1 img{
+    max-width: 40%;
+    height: auto;
+}
+
+.highlight3 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #1243c7;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+.card5-image2 {
+    position: relative;
+    margin: 0 -20px -20px -20px;
+    border-radius: 0 0 13px 16px;
+    overflow: hidden;
+}
+
+.gauge-emotion {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.gauge-arrow {
+    position: absolute;
+    bottom: 10%;
+    left: 53%;
+    transform: translateX(-50%) translateY(20%) rotate(50deg);
+    width: 10%;
+}
+/* Di atas ini untuk style Bagian Kartu Ke-5*/
+
+/* Di bawah ini untuk style Bagian Overal*/
+.card2 {
+    background: #102568;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card2-header {
+    display: flex;
+    align-items: center;
+}
+
+.card2-header h2 {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card2-header img{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.card2 .content {
+    margin-bottom: 12px;
+}
+
+.card2 .note{
+    color: #97b7da;
+    font-size: 0.9rem;
+}
+/* Di atas ini untuk style Bagian Overal*/
+
+/* Untuk layar super sempit*/
+@media (max-width: 180px) {
+    
+    .composition {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    h1 {
+        /* font-size: clamp(1rem, 5vw, 2rem); */
+        word-break: break-word;
+    }
+
+    .image-row {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+
+    .composition-list{
+        align-items: center;
+        text-align: center;
+    }
+
+    .card h2,
+    .card h3,
+    .card p,
+    .card2 h2,
+    .card2 p,
+    .card div {
+        white-space: normal;
+        word-break: break-word;
+        text-align: center;
+    }
+}
+
+/* Untuk layar super super sempit (<120)*/
+@media (max-width: 120px) {
+    .card-header,
+    .card2-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .card-header h2,
+    .card2-header h2 {
+        white-space: normal;
+        word-break: break-word;
+        font-size: 0.7rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .card-header img,
+    .card2-header img {
+        width: 14px;
+        height: auto;
+    }
+}
+
+/* Untuk 180px – 210px */
+@media (max-width: 220px) and (min-width: 181px) {
+  .card-header h2,
+  .card2-header h2 {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .card-header img,
+  .card2-header img {
+    width: 18px;
+    height: auto;
+  }
+}
